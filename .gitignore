@@ -1,4 +1,3 @@
-@"
 # Dependencies
 node_modules/
 
@@ -18,4 +17,3 @@ Thumbs.db
 # Environment files
 .env
 .env.local
-"@ | Out-File -FilePath .gitignore -Encoding utf8

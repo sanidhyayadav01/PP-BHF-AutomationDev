@@ -14,7 +14,7 @@ End-to-end Basic Automation suite for the PrizePlanet platform (dev environment)
 
 ## Project Structure
 
-​`
+```
 ├── tests/
 │   ├── auth.setup.ts                        # Login & save auth session
 │   ├── 01_login_signup.spec.ts              # Signup & login happy flow
@@ -31,7 +31,7 @@ End-to-end Basic Automation suite for the PrizePlanet platform (dev environment)
 ├── playwright.config.ts
 ├── package.json
 └── .gitignore
-​`
+```
 
 ---
 
@@ -45,10 +45,10 @@ End-to-end Basic Automation suite for the PrizePlanet platform (dev environment)
 
 ### Install
 
-​`bash
+```bash
 npm install
 npx playwright install
-​`
+```
 
 ---
 
@@ -64,27 +64,27 @@ npx playwright install
 
 ### Single file
 
-​`bash
+```bash
 npx playwright test tests/01_login_signup.spec.ts --headed
-​`
+```
 
 ### Specific browser
 
-​`bash
+```bash
 npx playwright test --project=chromium --headed
 npx playwright test --project=firefox --headed
 npx playwright test --project=webkit --headed
-​`
+```
 
 ---
 
 ## Allure Reporting
 
-​`bash
+```bash
 npm run allure:generate   # Generate report
 npm run allure:open       # Open in browser
 npm run pw:report         # Generate + open in one step
-​`
+```
 
 ---
 

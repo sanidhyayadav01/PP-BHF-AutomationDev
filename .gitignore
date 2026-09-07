@@ -1,0 +1,21 @@
+@"
+# Dependencies
+node_modules/
+
+# Playwright artifacts
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Auth state (contains session tokens - never commit!)
+.auth/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+"@ | Out-File -FilePath .gitignore -Encoding utf8

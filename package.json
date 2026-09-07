@@ -1,0 +1,30 @@
+{
+  "name": "prizeplanet-automation",
+  "version": "1.0.0",
+  "description": "PrizePlanet Playwright E2E automation setup",
+  "main": "index.js",
+  "scripts": {
+    "clean:allure": "rimraf allure-results allure-report",
+    "pw:run": "npm run clean:allure && playwright test",
+    "pw:headed": "npm run clean:allure && playwright test --headed",
+    "pw:demo": "npm run clean:allure && playwright test --headed --slowmo=500",
+    "pw:ui": "npm run clean:allure && playwright test --ui",
+    "pw:report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "test": "npm run clean:allure && playwright test && npm run allure:generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "allure-commandline": "^2.41.0",
+    "allure-playwright": "^3.8.0",
+    "esbuild": "^0.28.0",
+    "rimraf": "^6.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
